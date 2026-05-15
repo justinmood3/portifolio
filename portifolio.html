@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="profile.jpg" alt="Profile">
+<title>Justin TWIZERE Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#0f172a;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+header{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:.95;
+    margin:5px 0;
+}
+header button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:18px;
+    font-size:24px;
+    border-bottom:2px solid #e2e8f0;
+    padding-bottom:8px;
+}
+
+.card p{
+    margin-bottom:12px;
+    line-height:1.6;
+}
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.skill{
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:8px 14px;
+    display:inline-block;
+    margin:5px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.project{
+    background:#f8fafc;
+    padding:18px;
+    border-radius:15px;
+    border-left:5px solid #2563eb;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    margin-top:35px;
+    color:#64748b;
+    font-size:15px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:900px){
+.grid{
+grid-template-columns:1fr;
+}
+header h1{
+font-size:32px;
+}
+}
+img{
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <img src="profile.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%; margin-bottom:20px; align-items: left; display: flex;">
+<h1>TWIZERE Justin</h1>
+<p>Kigali, Rwanda</p>
+<p>Email: justinmood3@email.com</p>
+<p>Phone: +250 723510207</p>
+<p>GitHub: github.com/justinmood3</p>
+<button onclick="alert('Thank you for visiting my portfolio!')"><a href="tel:+250723510207">Hire / Contact Me</a></button>
+</header>
+
+<div class="grid">
+
+<div class="left">
+
+<div class="card">
+<h2>Profile</h2>
+<p>Motivated Level 3 Software Development student from Rwanda with practical skills in web development and system design. Passionate about solving real-world problems through technology.</p>
+</div>
+
+<div class="card">
+<h2>Education</h2>
+<p><strong>L3 Software Development</strong></p>
+<p>Current Score: 76%</p>
+<p>Progressing to Level 4 & 5</p>
+</div>
+
+<div class="card">
+<h2>Skills</h2>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Python</span>
+<span class="skill">VUE.js</span>
+<span class="skill">UI Design</span>
+<span class="skill">Problem Solving</span>
+<span class="skill">Database</span>
+</div>
+
+<div class="card">
+<h2>Qualities</h2>
+<ul>
+<li>Fast Learner</li>
+<li>Creative Thinker</li>
+<li>Disciplined</li>
+<li>Team Player</li>
+<li>Growth Mindset</li>
+</ul>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+<h2>Projects</h2>
+
+<div class="project">
+    <details>
+<summary><h3>Clinic Management System</h3></summary>
+<p>A complete healthcare management system built while in Level 3.</p>
+<ul>
+<li>Patient Registration<img src="1.png"></li>
+<li>Appointments<img src="2.png"></li>
+<li>Dashboard<img src="4.png"></li>
+<li>Admin Controls<img src="5.png"></li>
+</ul>
+<p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+</details>
+<details><summary><h3>AI Assistant</h3></summary>
+    <p>A simple AI assistant project built using Python to demonstrate basic AI interactions.</p>
+<ul>
+    <li>Sign in <img src="signin.png" alt="Sign In"></li>
+    <li>Sign up<img src="signup.png" alt="Sign Up"></li>
+    <li>Chat interface<img src="chat.png" alt="Chat Interface"></li>
+</ul>
+   <span class="skill"><a href="https://justin-ai-chat.onrender.com">view on server</a></span>
+<p><strong>Technologies:</strong> HTML, Python, CSS</p>
+</details>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Achievements</h2>
+<ul>
+<li>Built real software project in L3</li>
+<li>Self-learning programming outside school</li>
+<li>Strong interest in innovation</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Career Goal</h2>
+<p>To become a professional Software Engineer, earn scholarships, and build impactful digital solutions across Africa and worldwide.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Justin Mood Portfolio Website
+</footer>
+
+</div>
+
+</body>
+</html>
